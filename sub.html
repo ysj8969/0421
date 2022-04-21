@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://kit.fontawesome.com/06666754a7.js" crossorigin="anonymous"></script>
+
+	<title>핑크풋</title>
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/common.css" rel="stylesheet">
+	<link href="css/reset.css" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+
+	<style>
+
+		#sub {width:1260px; height:2710px; margin:0 auto; padding:30px;}
+
+		#submenu {width:100%; height:50px; background-color:gray;}
+
+		#submenu ul {font-size:16px; font-weight:bold;}
+
+		#submenu ul li {float:left; margin:0 5px; }
+
+		#submenu li a {text-decoration:none; color:#000;}
+
+		#submenu li a:hover {color:#666;}
+
+
+
+		#contents {width:100%; height:700px; background-color:purple; position:relative;}
+		
+
+
+		#product {width:500px; height:500px; background-color:gold; position:absolute; top:70px; left:30px;}
+		#product img{width: 100%;height: 100%;}
+
+		#context {width:450px; height:390px; background-color:red; position:absolute; top:70px; right:30px;}
+		#context h5 {font-size: 17px;}
+
+
+
+
+
+
+		table{width:100%; border-top:3px solid #e9e9e9;  border-bottom:1px solid #e9e9e9;margin: 0;}
+
+		td {padding:6px 15px; margin: 0;}
+
+		td:first-child {width:100px;margin: 0; }
+
+		select{width:100px; height:20px; float:left; margin:5px 0 0 0px; font-family:"돋움"; font-size:13px; color:#666; border:1px solid #eee; padding:0px 0 0 10px;}
+
+
+
+
+
+		button {margin:3px; cursor:pointer;}
+
+		button:first-child {background-color:#74c8ea; border-radius:3px; padding:10px 20px; color:#fff; border:none; }
+
+		button:nth-child(2) {background-color:#a2abb0; border-radius:3px; padding:10px 20px; color:#fff; border:none; }
+
+		button:nth-child(3) {background-color:#fff; border-radius:3px; padding:10px 20px; color:#666; border:none; border:1px solid #ddd; }
+
+		button:nth-child(4) {background-color:#fff; border-radius:3px; padding:10px 20px; color:#666; border:none; border:1px solid #ddd; }
+
+		
+		
+		#inquiry  ul {width:1200px; height:50px; margin: 60px 60px 60px 60px; }
+
+		#inquiry  ul  li {width:270px; height:100%; background-color:#eee; float:left; text-align:center; padding:15px 0 0 0px; border:1px solid #ddd; border-bottom:1px solid #000; font-size:15px;}
+
+		ul  li  a {color:#000;}
+
+		#inquiry ul li a {text-decoration:none;}
+
+		#inquiry {width:1200px; height:60px; margin:50px auto;}
+
+		#inquiry  ul  li:first-child {background-color:#fff; border:1px solid #000; border-bottom:none; }
+
+
+
+		#joungbo {width: 1200px; height: 4500px;  margin: 0 auto; background-color: green;}
+
+		#jojoungbo1 {width: 1000px; height: 1700px; margin: 0 auto;}
+		
+		#jojoungbo1 img{width: ;}
+
+
+
+		#jojoungbo2 {width: 600px; height:300px; margin: 0 auto;}
+		
+		#jojoungbo2  h1{font-size: 40px; color: #440; float: left;}
+		
+		#jojoungbo2  p {font-size: 20px; float: left; color: #412;}
+
+
+
+		#jjoungbo-1{ width: 1200px; height: 100px; margin: 0 auto;}
+		
+		#jjoungbo-1  img {width: 90px; height: 90px; margin: 0 0 0 550px;}
+
+
+		#jojoungbo3{width: 1000px; height: 1000px; margin: 0 auto;}
+		
+		#jojoungbo3 img{width: 1000px; height: 1000px; margin: 0 auto;}
+
+		
+
+		#spec{width: 1000px; height: 350px; margin: 10px  auto 0; }
+
+
+
+		#tablebox  {width:900px; height:300px; margin:120px auto 0px; display:block; border-top:1px solid #ddd;}
+
+    	#tablebox > span { display:inline-block; font-size:15px;  margin:5px 0 0 0px; width:100%; text-align:left;} 
+
+    	#tablebox > table {display:block; margin:10px 0 0 0px; line-height:30px;}
+
+    	#tablebox > table th {font-size:14px; text-align:left; width:200px; background-color:#ddd; padding:0 0 0 20px;}
+
+    	#tablebox > table td {font-size:14px; text-align:left; width:700px; background-color:#eee; padding:0 0 0 20px; color:#333;}
+
+		
+
+		#benefit {width: 1000px; height: 600px; margin: 30px 15px 0 100px; background-color: green;}
+		#benefit img{width: 100%; height: 100%;}
+
+
+
+
+
+
+		#shipping > ul {width:1200px; height:50px; margin:40px auto 0px;}
+
+      #shipping > ul > li {width:300px; height:100%; background-color:#eee; float:left; text-align:center; padding:15px 0 0 0px; border:1px solid #ddd; border-bottom:1px solid #000; font-size:13px;}
+
+
+      #shipping > ul > li > a {color:#000;}
+
+
+      #shipping {width:1200px; height:500px; margin:200px auto 0;}
+
+      #shipping > ul > li:nth-child(2) {background-color:#fff; border:1px solid #000; border-bottom:none; color:#000;}
+
+      #shipping > h2 {float:left; padding:50px 20px 0px; font-size:19px;}
+
+      #shipping > #shipping_textbox {width:100%; height:270px;}
+
+      #shipping > #shipping_textbox > ul {display:block; width:1100px; height:280px;  margin:100px 35px 0px;}
+
+      #shipping > #shipping_textbox > ul > li {font-size:13px; list-style:disc; margin:7px 10px; color:#666;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</style>
+
+
+
+</head>
+<body>
+	<div id="top">
+		<div id="ttop">
+			<div id="login">
+				<ul>
+					<li><a href="#">로그인</a></li>
+					<li>|</li>
+					<li><a href="#">회원가입</a></li>
+					<li>|</li>
+					<li><a href="#">마이페이지</a></li>
+					<li>|</li>
+					<li><a href="#">장바구니</a></li>
+					<li>0</li>
+
+				</ul>
+			</div>
+			<div id="home">
+				<ul>
+					<li><a href="#">즐겨찾기</a></li>
+					<li>|</li>
+					<li><a href="#">고객센터</a></li>
+					<li>|</li>
+					<li><a href="#">상품후기</a></li>
+					<li>|</li>
+					<li><a href="#">문의하기</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div id="logobox">
+
+		<div id="logo">
+			<a href="#"><img src="img/logo2.jpg" alt="로고2"></a>
+		</div>
+
+		<div class="search-container">
+			<input name="search" placeholder="검색" name="search" />
+
+		</div>
+	</div>
+
+
+	<div id="navbar">
+		<div id="nav">
+			<nav>
+				<ul>
+
+
+					<li><a href="#">신상품</a></li>
+
+					<li><a href="#">베스트</a></li>
+
+					<li><a href="#">문구</a></li>
+
+					<li><a href="#">페브릭</a></li>
+
+					<li><a href="#">패션잡화</a></li>
+
+					<li><a href="#">여행</a></li>
+
+					<li><a href="#">인테리어</a></li>
+
+					<li><a href="#">가전/생활</a></li>
+					<li><a href="#">핸드폰/디지털</a></li>
+
+				</ul>
+
+			</nav>
+		</div>
+
+
+
+	</div>
+
+</header>
+
+<div id="sub">
+
+	<div id="submenu">
+
+		
+
+		<ul>
+
+			<li> <a href="#">신상품 ></a></li>
+
+			<li> <a href="#">추천순 ></a></li>
+
+			<li> <a href="#">쪼꼬미폼폼블럭</a></li>
+
+		</ul>
+
+	</div>
+
+
+
+	<div id="contents">
+
+		
+
+		<div id="product"><img src="img/sangpumimg1.1.jpg" alt="상품이미지1"></div>
+
+		<div id="context">
+
+			<h5>쪼꼬미폼폼블럭</h5>
+
+
+
+			<table>
+
+				<tr>
+					<td>정가</td>
+					<td><del>7,000원</del></td>
+				</tr>
+
+
+				<tr>
+
+					<td>판매가</td>
+
+					<td>5,600원</td>
+
+				</tr>
+				<tr>
+					<td>구매제한</td>
+
+					<td>최소1개</td>
+				</tr>
+
+
+
+				<tr>
+
+					<td>구매혜택</td>
+
+					<td>적립마일리지:+56원(상품:56원)</td>
+
+				</tr>
+
+
+
+				<tr>
+
+					<td>제조사</td>
+
+					<td>핑크풋</td>
+
+				</tr>
+
+
+
+				<tr>
+
+					<td>배송비</td>
+
+					<td>3,000원/ 주문시결제(선결제)
+					(택배)</td>
+
+				</tr>
+
+
+
+				<tr>
+
+					<td>상품코드</td>
+
+					<td>5007</td>
+
+				</tr>
+
+				<tr>
+					<td>원산지</td>
+
+					<td>중국</td>
+				</tr>
+
+
+
+				<tr>
+
+					<td>선택사항</td>
+
+					<td>
+
+						<select name="select" id="select" >
+
+							<option>선택</option>
+
+							<option>쪼꼬미폼폼블럭_랜덤</option>
+
+							<option>쪼꼬미폼폼블럭_옐로우</option>
+
+							<option>쪼꼬미폼폼블럭_핑크</option>
+
+							<option>쪼꼬미폼폼블럭_민트</option>
+
+							<option>쪼꼬미폼폼블럭_네이비</option>
+
+						</select>
+
+					</td>
+
+				</tr>
+
+
+
+				<tr>
+
+					<td colspan="2">
+
+						<button>장바구니</button>
+
+						<button>찜하기</button>
+
+						<button>바로구매</button>
+
+						
+
+					</td>
+
+				</tr>
+			</table>
+		</div>
+	</div>
+
+	
+
+
+	<div id="inquiry">
+
+		<ul>
+
+			<li>상품상세정보</li>
+
+			<li><a href="#">배송안내</a></li>
+
+			<li><a href="#">상품후기</a></li>
+
+			<li><a href="#">상품문의</a></li>
+		</ul>
+		
+
+	</div>
+
+	<div id="joungbo">
+		<div id="jojoungbo1">
+			<img src="img/sangpumjb1.png"alt="상품정보">
+		</div>
+		<div id="jojoungbo2">
+			<h1>쪼꼬미 폼폼블럭 POINT</h1>
+			<p>① 디자이너가 제작한 일대일 도안 제공</p>
+			<p>② 부드럽고 쉽게 끼울 수 있는 블럭</p>
+			<p>③ 2022 KC인증 우수한 품질과 안정성</p>
+		</div>
+		<div id="jjoungbo-1">
+			<img src="img/like2.png" alt="좋아요">
+		</div>
+		<div id="jojoungbo3">
+			<img src="img/sangpumjb2.png" alt="상품정보2">
+		</div>
+		
+		<div id="spec">
+			<img src="img/sangpumjb3.png" alt="상품정보3">
+			
+
+		</div>
+
+	  <div id="tablebox">                        
+
+      
+
+      <span>상품정보</span>
+
+      <table>
+
+        <tr>
+
+          <th>상품 사이즈</th>
+
+          <td>110mm X 159mm</td>
+
+        </tr>
+
+        <tr>
+
+          <th>WEIGHT</th>
+
+          <td>86g</td>
+
+        </tr>
+
+        <tr>
+
+          <th>KC 인증번호</th>
+
+          <td>CB06R761-2001</td>
+
+
+        </tr>
+
+        <tr>
+
+          <th>ORIGIN</th>
+
+          <td>중국</td>
+
+        </tr>
+
+        <tr>
+
+          <th>MATERIAL</th>
+
+          <td>plastic</td>
+
+        </tr>
+
+        <tr>
+
+          <th>AGE</th>
+
+          <td>8세 이상사용</td>
+
+        </tr>
+
+        <tr>
+
+          <th>COLOR</th>
+
+          <td>yellow, pink, mint, navy</td>
+
+        </tr>
+
+
+      </table>
+
+    </div>
+
+    <div id="benefit">
+			<img src="img/sbs.jpg"alt="혜택">
+		</div>
+	</div>
+
+	 <div id="shipping">
+
+      <ul>
+
+        <li><a href="#">상품상세정보</a></li>
+
+        <li>배송안내</li>
+
+        <li><a href="#">상품후기</a></li>
+
+        <li><a href="#">상품문의</a></li>                       
+
+      </ul>      
+
+
+      <h2>배송안내</h2>
+
+
+
+      <div id="shipping_textbox">
+
+
+
+        <ul>
+
+          <li>배송비: 기본배송료는 3,000원 입니다. (도서, 산간, 오지 일부지역은 배송비가초가될수있습니다.) 30,000원 이상 구매시 무료배송입니다.</li>
+
+          <li>본 상품은 평균 배송일은 1~5일입니다.(입금 확인 후)설치 상품의 경우 다소 늦어질수있습니다.(배송예정일은 주문시점 (주문순서)에따라 유동성이 발생하므로 평균 배송일과 차이가 발생 할 수 있습니다. )</li>
+
+          <li>본 상품은 평균 배송일은 1~5일입니다. 배송가능일이란 본 상품을 주문하신 고객님들께 상품 배송이 가능한 기간을 의미합니다.(단, 연휴 및 공휴일은 기간 계산시 제외하며 현금 주문일 경우 입금 일 기준 입니다. )</li>
+
+
+
+        </ul>
+        
+
+      </div>
+
+    </div>
+
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<footer>
+			<div id="fbox">
+
+				<div id="fotbox">
+
+					<ul>
+						<li><a href="#">회사소개</a></li>
+						<li>|</li>
+						<li><a href="#">이용약관</a></li>
+						<li>|</li>
+						<li><a href="#">개인정보처리방침</a></li>
+						<li>|</li>
+						<li><a href="#">이용안내</a></li>
+						<li>|</li>
+						<li><a href="#">광고/제휴문의</a></li>
+					</ul>		
+
+				</div>		
+
+			</div>
+			<div id="cbox">
+				<div id="center">
+					<h2>고객센터</h2>
+					<h6>평일 10:00~18:00</h6>
+
+					<br>
+					<h2>계좌정보
+					1002-232-411330</h2>
+					<h6>우리은행
+					예금주: 유수진(핑크풋)</h6>
+
+				</div>
+
+
+
+				<div id="account">
+
+					<h2>핑크풋</h2>
+					<span>서울특별시 마포구 독막로7길 64 풀꽃빌딩 2F대표 유수진개인정보관리자 대표번호 :070-8672-9133 팩스번호:02-322-0169<br>
+						메일 :pinkfootstore@naver.com<br>
+						사업자등록번호 :128-27-53608 사업자번호조회 >통신판매업신고번호 :2018-서울마포-0223호 호스팅제공 : 엔에이치엔고도(주)copyright(c) pinkfotr4168.godomall.com all rights reserved.<span>
+						</div>
+
+
+
+
+
+
+
+
+
+					</footer>
+				</body>
+				</html>
